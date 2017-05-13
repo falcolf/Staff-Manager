@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name = "staffdata.Info" table="staffinfo">
+        <id name="id" column="ID">
+            <generator class="sequence">
+                <param name="sequence">staffseqn</param>
+            </generator>
+        </id>
+        <property name="name" column="NAME"></property>
+        <property name="gender" column="GENDER"></property>
+        <property name="dob" column="DOB"></property>
+        <property name="doj" column="DOJ"></property>
+        <property name="sal" column="SAL"></property>
+        <property name="no" column="NO"></property>
+    </class>
+
+
+</hibernate-mapping>
