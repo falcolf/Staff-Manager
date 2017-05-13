@@ -24,7 +24,9 @@ import org.hibernate.cfg.Configuration;
 
 public class StaffData extends JFrame implements WindowListener {
     StaffData(){
+        System.out.println("Hello");
         setLayout(null);
+        System.out.println("hey");
         JButton addb,updtb,viewb,deleteb;
         addb=new JButton("ADD DETAILS");
         updtb=new JButton("UPDATE DETAILS");
@@ -35,6 +37,8 @@ public class StaffData extends JFrame implements WindowListener {
         viewb.setBounds(50, 120, 150, 30);
         deleteb.setBounds(50, 170, 150, 30);
         this.add(addb);
+        System.out.println("Whatsup");
+        System.out.println("Nothing Much");
         this.add(updtb);
         this.add(viewb);
         this.add(deleteb);
